@@ -2,11 +2,16 @@
   display: flex;
   padding: 13px 10px 0 10px;
   border-bottom: 0.5px solid white;
-  font-size: 1em;
+  font-size: 2.5vw 1vw;
   color: #F8F8F8;
 }
 .menu-card-image {
   flex: 1;
+}
+.menu-card-image img {
+  width: 100%;
+  max-width: 50px;
+  margin: auto;
 }
 .menu-card-headers {
   flex:2.5;
@@ -16,16 +21,17 @@
 }
 
 .menu-card-headers header {
-  font-size: 1.35em;
+  font-size: 2vw;
   margin-bottom:0;
   padding-bottom: 0;
 }
 .menu-card-headers p {
-  margin-top:0.2em;
-  font-size: 1.1em;
+  font-size: 1.7vw;
+  margin-top:0.25vw;
   font-weight: bold;
-  line-height: 1em;
+
 }
 .menu-card-details {
   flex: 1;
+  font-size: 1.4vw;
 }

@@ -1,12 +1,15 @@
 .left-footer footer{
   position: fixed;
-  font-size: 1.25em;
+  font-size: 2vw;
   left: 0;
   bottom: 0;
   width: 30%;
   text-align: center;
   text-decoration: underline;
   padding-bottom: 1%;
+}
+footer img {
+  height: 100%;
 }
 
 

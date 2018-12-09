@@ -80,7 +80,7 @@ class Navbar extends Component {
             </div>
             <div className="user-image">
               <img src={UserPic} 
-              alt="User Face" className="responsive-imgs" /> 
+              alt="User Face" /> 
             </div>
         </nav>
     </header>

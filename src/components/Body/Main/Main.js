@@ -21,6 +21,7 @@ class Main extends Component {
                 <div className="left-container">
                     <Card/>
                     <Card/>
+                    <Card/>
                     <Footer />
                 </div>
 

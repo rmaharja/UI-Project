@@ -6,7 +6,7 @@ const Footer = (props) => (
     <div className="left-footer">
             <footer>
                 <img src={Screw} alt="Screw Pic" />
-                Fixed to bottom
+                Fixed to the bottom
                 <img src={Screw} alt="Screw Pic" />
             </footer>
     </div>
