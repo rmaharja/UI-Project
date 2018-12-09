@@ -19,5 +19,6 @@
   background-color: #F8F8F8;
   flex: 1;
   padding-right: 1%;
+  min-height: 100vh;
 }
 
