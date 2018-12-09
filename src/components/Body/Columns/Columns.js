@@ -1,11 +1,6 @@
 import React, {Component} from 'react';
 import "./Columns.css";
 
-const styles = {
-    columnColor: {
-        backgroundColor: "#DE2D00"
-    }
-}
 class Columns extends Component {
     state = {
         columnNumber: null,
