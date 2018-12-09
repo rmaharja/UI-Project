@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="33px" viewBox="0 0 18 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Screw</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Test-project" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Green" transform="translate(-238.000000, -917.000000)" fill-rule="nonzero">
+            <g id="Screw" transform="translate(247.000000, 935.000000) rotate(-45.000000) translate(-247.000000, -935.000000) translate(229.000000, 917.000000)">
+                <g id="Group">
+                    <polygon id="Shape" fill="#9FA8DA" points="5.656 34.586 0 36 1.415 30.344 25.237 6.52 29.48 10.762"></polygon>
+                    <g transform="translate(4.000000, 0.000000)" id="Shape" fill="#5C6BC0">
+                        <polygon points="12.21 15.547 10.571 17.187 12.59 23.652 14.213 22.028"></polygon>
+                        <polygon points="8.926 18.832 7.287 20.471 9.306 26.937 10.93 25.313"></polygon>
+                        <polygon points="2.381 25.377 0.767 26.992 2.81 33.433 4.404 31.838"></polygon>
+                        <polygon points="5.684 22.074 4.045 23.714 6.063 30.179 7.688 28.555"></polygon>
+                        <path d="M28.137,14 C27.307,14 26.541,13.675 25.922,13.058 C24.91,12.045 19.948,7.084 18.979,6.112 C17.691,4.822 17.672,2.74 18.938,1.472 L20.456,0 L25.293,4.829 L23.997,6.214 L25.786,7.997 L27.074,6.614 L32,11.541 L30.475,13.009 C29.85,13.638 28.996,14 28.137,14 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

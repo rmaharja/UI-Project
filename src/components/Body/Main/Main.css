@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+.left-container {
+  width: 33%;
+  background-color: #4D4D4D;
+  height: 100vh;
+  margin-right: 2%;
+  margin-left: 0;
+  color: #F8F8F8;
+}
+.right-container {
+  margin-top: 1%;
+  background-color: #F8F8F8;
+  flex: 1;
+  margin-right: 1%;
+}
+
