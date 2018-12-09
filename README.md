@@ -2,5 +2,5 @@
 
 ## Things to work on:  
 
-*Displaying number of columns dynamically
-*and adding media queries.
+* Displaying number of columns dynamically
+* Adding media queries.
