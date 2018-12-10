@@ -24,6 +24,10 @@ class Columns extends Component {
         //if id is "columnNumber", then parse into integer first
         if (id === "columnNumber") {
             value = parseInt(value);
+
+            if (value > 47) {
+               return alert("Pick a value less than 48");
+            }
         }
 
         //setting the value to the state
@@ -60,13 +64,18 @@ class Columns extends Component {
                 <div className="columns-header-container">
                     <div className="columns-header">
                         <label htmlFor="columnNumber">Number of Columns</label>
-                        <input type="number" id="columnNumber" 
-                        onChange={this.handleOnChange}/>
+                        <input type="number" 
+                        id="columnNumber" 
+                        onChange={this.handleOnChange}
+                        />
                     </div>
 
                     <div className="row-header">
                         <label htmlFor="rowHeight">Row height</label>
-                        <input type="number" id="rowHeight" onChange={this.handleOnChange}/>px
+                        <input 
+                        type="number" 
+                        id="rowHeight" 
+                        onChange={this.handleOnChange}/>px
                     </div>
                 </div>
                 {/* Renders Columns */}
