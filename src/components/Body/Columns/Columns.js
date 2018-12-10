@@ -34,9 +34,10 @@ class Columns extends Component {
         console.log ("renderColumn");
         //Render columns based on column number from state
         let columnArray = [];
+
+        //Setting a default number of columns to 3
         let numberOfColumns = this.state.columnNumber ? this.state.columnNumber : 3
         const column = (
-
                 <div
                     className="columns"
                     style={{

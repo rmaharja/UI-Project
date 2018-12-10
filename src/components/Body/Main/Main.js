@@ -19,9 +19,13 @@ class Main extends Component {
         return (
             <div className="container">
                 <div className="left-container">
-                    <Card/>
-                    <Card/>
-                    <Card/>
+                    <Card
+                    color={this.state.color}/>
+                    <Card
+                    color={this.state.color}/>
+                    <Card
+                    color={this.state.color}/>
+
                     <Footer />
                 </div>
 
