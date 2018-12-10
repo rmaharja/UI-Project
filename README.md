@@ -1,7 +1,7 @@
 # A Simple responsive UI design using React (in 3 hours total)
 
 ### Some Key Decisions:
-* Used vh & vw for font size; used percent for padding and margin whenever possible for a more responsive UI especially (especially without media queries)
+* Used vh & vw for font size; used percent for padding and margin whenever possible for a more responsive UI (especially without media queries)
 * Set default number of columns to 3 and default row height to 400px so the user can visualize the app.
 * Set max number of columns to 47; any entering value greater than 47 distorts the columns
 * Manually created the Red Fire logo for side 
