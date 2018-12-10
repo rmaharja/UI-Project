@@ -6,7 +6,7 @@
 * Set max number of columns to 47; any entering value greater than 47 distorts the columns
 
 ### Things to work on (did not get to it in 3 hrs):  
-* CSS Animation using keyframes for changing number of columns 
+* CSS Animation using keyframes for changing number of columns and row height
 * Adding media queries: *Setting more max and min sizes 
 * Find exact font to match the given design
 * Testing designs on different browsers and different screen sizes/devices
