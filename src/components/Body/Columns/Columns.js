@@ -5,104 +5,73 @@ class Columns extends Component {
     state = {
         columnNumber: null,
         rowHeight: null,
-        color: "green"
+        color: "green",
+        columnColors: {
+            "green": "#4AB054",
+            "red": "#DE2D00"
+        }
     }
-    componentWillReceiveProps(newProps){
-        this.setState({
-            color: newProps.color
-        })
+    componentWillReceiveProps(newProps) {
+        this.setState({color: newProps.color})
         console.log("Color in Columns:", this.state.color)
     }
 
-
     handleOnChange = (e) => {
-      //pulling id and value from e.target
-      const {id, value} = e.target;
 
-      //setting the value to the state
-        this.setState({
-          [id]: value
-        }) 
+        //pulling id and value from e.target
+        let {id, value} = e.target;
+
+        //if id is "columnNumber", then parse into integer first
+        if (id === "columnNumber") {
+            value = parseInt(value);
+        }
+
+        //setting the value to the state
+        this.setState({[id]: value})
         console.log("onChange", this.state);
+    }
+    renderColumn = () => {
+        console.log ("renderColumn");
+        //Render columns based on column number from state
+        let columnArray = [];
+        let numberOfColumns = this.state.columnNumber ? this.state.columnNumber : 3
+        const column = (
+
+                <div
+                    className="columns"
+                    style={{
+                    height: `${this.state.rowHeight}px`,
+                    backgroundColor: `${this.state.columnColors[this.state.color]}`
+                }}></div> )
+
+        for( let i = 0; i < numberOfColumns ; i++) {
+            columnArray.push(column);
+        }
+
+        return columnArray;
     }
 
     render() {
-        const cols = {
-            redCols: (
-        <div className="columns-container">
-                <div
-                className="columns"
-                style={{
-                  height: `${this.state.rowHeight}px`,
-                  backgroundColor: "#DE2D00"
-                 }}>
-            </div>
-            <div
-                className="columns"
-                style={{
-                  height: `${this.state.rowHeight}px`,
-                  backgroundColor: "#DE2D00"
-                 }}>
-            </div>
-            <div
-                className="columns"
-                style={{
-                  height: `${this.state.rowHeight}px`,
-                  backgroundColor: "#DE2D00"
-                 }}>
-            </div>
-        </div>
-            ),
-            greenCols: (
-            <div className="columns-container">
-                        <div
-                        className="columns"
-                        style={{
-                          height: `${this.state.rowHeight}px`,
-                          backgroundColor: "#4AB054"
-                         }}>
-                    </div>
-                    <div
-                        className="columns"
-                        style={{
-                          height: `${this.state.rowHeight}px`,
-                          backgroundColor: "#4AB054"
-                         }}>
-                    </div>
-                    <div
-                        className="columns"
-                        style={{
-                          height: `${this.state.rowHeight}px`,
-                          backgroundColor: "#4AB054"
-                         }}>
-                    </div>
-                </div>
-                    ),
-        }
+
+              
         return (
             <div className="main-columns-container">
                 <div className="columns-header-container">
                     <div className="columns-header">
                         <label htmlFor="columnNumber">Number of Columns</label>
-                        <input 
-                        type="text" 
-                        id="columnNumber" 
+                        <input type="number" id="columnNumber" 
                         onChange={this.handleOnChange}/>
                     </div>
 
                     <div className="row-header">
                         <label htmlFor="rowHeight">Row height</label>
-                        <input 
-                        type="text" 
-                        id="rowHeight" 
-                        onChange={this.handleOnChange}/>px
+                        <input type="number" id="rowHeight" onChange={this.handleOnChange}/>px
                     </div>
                 </div>
-                    {(this.state.color==="green") ? 
-                    (cols.greenCols) :
-                    (cols.redCols)
-                        
-                }
+                {/* Renders Columns */}
+                <div className="columns-container">
+                    {this.renderColumn()}
+                </div>
             </div>
         );
     }
