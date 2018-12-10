@@ -1,4 +1,5 @@
 # A Simple responsive UI design using React (in 3 hours total)
+Deployed: https://responsive-react-ui.herokuapp.com/
 
 ### Some Key Decisions:
 * Used vh & vw for font size; used percent for padding and margin whenever possible for a more responsive UI (especially without media queries)
