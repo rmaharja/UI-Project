@@ -18,17 +18,32 @@
   display: flex;
   flex-direction: column;
   margin: auto;
+  max-width: 60%;
+  white-space: nowrap; 
+
+
+
 }
 
 .menu-card-headers header {
   font-size: 2vw;
   margin-bottom:0;
   padding-bottom: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 2%;
+
 }
 .menu-card-headers p {
   font-size: 1.7vw;
   margin-top:0.25vw;
   font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 2%;
+
 
 }
 .menu-card-details {

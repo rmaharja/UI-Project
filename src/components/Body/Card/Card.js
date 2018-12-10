@@ -27,8 +27,8 @@ class Card extends Component {
       </div>
 
       <div className="menu-card-headers">
-        <header>Line item title</header>
-        <p>Subheader here</p>
+        <header>A really long title appears here</header>
+        <p> A long Subheader appears here</p>
       </div>
       
       <div className="menu-card-details">
