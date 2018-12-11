@@ -5,7 +5,7 @@ Deployed: https://responsive-react-ui.herokuapp.com/
 * Used vh & vw for font size; used percent for padding and margin whenever possible for a more responsive UI (especially without media queries)
 * Set default number of columns to 3 and default row height to 400px so the user can visualize the app.
 * Set max number of columns to 47 because any value greater than 47 distorts the columns
-* Manually created the Red Fire logo for side 
+* Manually created the Red Fire logo for "side nav" using Adobe Photoshop 
 
 ### Things to work on (did not get to it in 3 hrs):  
 * CSS Animation using keyframes for changing number of columns and row height
