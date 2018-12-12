@@ -13,7 +13,7 @@ Deployed: https://responsive-react-ui.herokuapp.com/
 * Find exact font to match the given design
 * Match the sizing of the image better
 * Possibly make the left "Side Bar" collapsable in smaller screen sizes, depending on the use of the application (depends on purpose of the application)
-* Using "<NavLink>" tags (import from "react-router-dom") instead of "<a>" tags for green and red tabs to track active tags
+* Using "NavLink" tags (import from "react-router-dom") instead of "a" tags for green and red tabs to track active tags
 * Testing designs on more/older browsers and different screen sizes/devices
 * Refactoring to make code more efficient/clean
 * Refactor componenets to make it easier to understand
