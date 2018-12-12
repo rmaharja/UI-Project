@@ -20,3 +20,4 @@ Deployed: https://responsive-react-ui.herokuapp.com/
 * Adding more comments to the code to make it easier for other developers to understand the code
 * Adding redux to make it easier for state management
 * Changing the method of displaying the message for exceeding max number of columns (sending a clean message instead of an alert)
+* Adding Aria Accessibility
