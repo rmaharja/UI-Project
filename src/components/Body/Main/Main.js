@@ -1,41 +1,37 @@
-import React, {Component} from 'react';
+import React from 'react';
 import "./Main.css";
 import Card from "../Card/Card.js";
 import Footer from "../Footer/Footer.js";
 import Columns from "../Columns/Columns.js";
 
-class Main extends Component {
-    state = {
-        color: "green"
-    }
-    componentWillReceiveProps(newProps){
-        this.setState({
-            color: newProps.color
-        })
-        console.log("Color in Main:", this.state.color)
-    }
-
-    render() {
-        return (
+const Main = (props) => (
             <div className="container">
                 <div className="left-container">
-                    <Card
-                    color={this.state.color}/>
-                    <Card
-                    color={this.state.color}/>
-                    <Card
-                    color={this.state.color}/>
+                    <div className="left-container-content">
+                         <div className="left-container-cards">
+                         <Card
+                         color={props.color}/>
+                         <Card
+                         color={props.color}/>
+                         <Card
+                         color={props.color}/>
+        
+                         <Footer />
+                         </div>
+                        <div className="left-container-flex">
+                        </div>
+                    </div>
 
-                    <Footer />
                 </div>
 
                 <div className="right-container">
-                    <Columns
-                    color={this.state.color} />
+                    <div className="right-content">
+                        <Columns
+                        color={props.color} />
+                    </div>
                 </div>
             </div>//end of container
         );
-    }
-}
+
 
 export default Main;

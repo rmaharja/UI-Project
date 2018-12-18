@@ -5,19 +5,15 @@ class Columns extends Component {
     state = {
         columnNumber: null,
         rowHeight: null,
-        color: "green",
         columnColors: {
             "green": "#4AB054",
             "red": "#DE2D00"
         }
     }
-    componentWillReceiveProps(newProps) {
-        this.setState({color: newProps.color})
-        console.log("Color in Columns:", this.state.color)
+    componentDidMount(){
+        console.log("Columns Component Mounted...");
     }
-
     handleOnChange = (e) => {
-
         //pulling id and value from e.target
         let {id, value} = e.target;
 
@@ -32,7 +28,6 @@ class Columns extends Component {
 
         //setting the value to the state
         this.setState({[id]: value})
-        console.log("onChange", this.state);
     }
     renderColumn = () => {
         console.log ("renderColumn");
@@ -46,7 +41,7 @@ class Columns extends Component {
                     className="columns"
                     style={{
                     height: `${this.state.rowHeight}px`,
-                    backgroundColor: `${this.state.columnColors[this.state.color]}`
+                    backgroundColor: `${this.state.columnColors[this.props.color]}`
                 }}></div> )
 
         for( let i = 0; i < numberOfColumns ; i++) {
@@ -57,8 +52,6 @@ class Columns extends Component {
     }
 
     render() {
-
-              
         return (
             <div className="main-columns-container">
                 <div className="columns-header-container">

@@ -1,21 +1,28 @@
 .container {
   display: flex;
   align-items: flex-start;
-  margin-top: 60px;
+  margin-top: 77px;
   margin-bottom: 0;
-  background-color: #4D4D4D;
-
+  background-color: #4d4d4d;
 }
 .left-container {
-  width: 30%;
-  background-color: #4D4D4D;
+  width: 50%;
   min-height: 100vh;
   margin-left: 0;
   color: #F8F8F8;
 }
+.left-container-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .right-container {
+  width:100%;
+  background-color: #FfFfFf;
+}
+.right-content{
   padding-top: 1%;
-  background-color: #F8F8F8;
+  background-color: #FfFfFf;
   flex: 1;
   padding-right: 1%;
   min-height: 100vh;

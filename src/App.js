@@ -3,8 +3,6 @@ import './App.css';
 import Navbar from "./components/Navbar/Navbar";
 import Main from "./components/Body/Main/Main";
 
-
-
 class App extends Component {
   state = {
     color:"green"
@@ -23,7 +21,6 @@ class App extends Component {
         color: "red"
     })
 }
-
   render() {
     return (
       <div className="App">

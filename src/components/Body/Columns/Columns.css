@@ -10,7 +10,7 @@
   font-size: 1.5vw;
 }
 .columns-container {
-  box-shadow: 0.25px 0.25px 1px 1px #ccc;
+  box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.1);
   margin-left: 4%;
 }
 .columns-header-container input {
@@ -30,6 +30,7 @@
   padding-bottom: 4%;
   padding-left: 2%;
   display: flex;
+  background-color: #f8f8f8; 
 }
 .columns {
   flex: 1;

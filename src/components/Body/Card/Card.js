@@ -1,41 +1,27 @@
-import React, {Component} from "react";
+import React from "react";
 import "./Card.css";
 import GreenFire from "../../../Assets/GreenFire.svg";
 import RedFire from "../../../Assets/RedFire.png";
 
-
-class Card extends Component {
-
-  state = {
-    color: "green",
-    fireColor: {
-      "green": GreenFire,
-      "red": RedFire
-    }
-  }
-  componentWillReceiveProps(newProps) {
-    this.setState({color: newProps.color})
-    console.log("Color in Cards:", this.state.color)
-}
-
-  
-  render () {
-    return (
+const Card = (props) => (
     <div className="menu-card">
       <div className="menu-card-image">
-        <img src={this.state.fireColor[this.state.color]} alt="Green-Fire" />
+      { 
+        (props.color === "green") ? 
+        (<img src={ GreenFire} alt="Red-Fire" />) :
+        (<img src={RedFire} alt="Red-Fire" />) 
+      }
       </div>
 
       <div className="menu-card-headers">
-        <header>A really long title appears here</header>
-        <p> A long Subheader appears here</p>
+        <header>Line Item Title</header>
+        <p> Subheader here</p>
       </div>
       
       <div className="menu-card-details">
         <p>A detail</p>
       </div>
     </div>//end of menu-card
-  )}
-}
+    )
 
 export default Card;
